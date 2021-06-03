@@ -114,6 +114,5 @@ contract CharityDonation{
     // destroy contract and send all funds attached, to the contract owner
     function destroyContract() public ownerOnly {
         selfdestruct(contractOwner);
-        
     }
 }

@@ -76,12 +76,12 @@ solc --gas CharityDonation.sol
 In truffle console (second terminal): 
 Set a variable contractBin with binary code in the third terminal
 ```js
-contractBin = '{bin_from_third_terminal}'  
+contractBin = '{bin_from_third_terminal}'
 ```
 
 Do the same for the ABI  
 ```js
-contractAbi = [{abi_from_third_terminal}]  
+contractAbi = [{abi_from_third_terminal}]
 ```
 
 Define DonationContract variable using ABI
@@ -121,7 +121,7 @@ DonationContract.deploy({data: contractBin, arguments: [charityAddresses]}).send
 
 Store contract's address in a contractAddress variable
 ```js
-contractAddress = '0x0656e2400cb2C953fa95d540072cf6905824cDb9'
+contractAddress = '{contract_address}'
 ```
 
 ### Test contract methods
