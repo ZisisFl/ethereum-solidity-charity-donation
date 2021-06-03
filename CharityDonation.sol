@@ -16,6 +16,7 @@ contract CharityDonation{
     uint private topDonation;
     address private topDonor;
 
+    // constructor to initialize contract owner, supported charities and init total donations sum
     constructor(address payable[] memory charities) {
         contractOwner = payable(msg.sender);
         supportedCharities = charities;
@@ -100,6 +101,7 @@ contract CharityDonation{
         makeTransactions(amountToDonate, destinationAddress, amountToSend, charityID);
     }
 
+    // function to view total sum of donations made to all charities
     function getOverallDonationInfo() public view returns (uint) {
         return totalDonations;
     }
